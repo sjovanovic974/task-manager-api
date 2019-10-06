@@ -11,7 +11,7 @@ const sendWelcomeEmail = (email, name) => {
     subject: 'Thanks for joining in!',
     text: `Welcome to the app, ${name}. We hope your going to enjoy in our product.`
   });
-}
+};
 
 const sendFarewellEmail = (email, name) => {
   sgMail.send({
@@ -20,9 +20,9 @@ const sendFarewellEmail = (email, name) => {
     subject: `Goodbye ${name}`,
     text: `We are so sad to hear that you are leaving, ${name}. WWould you please be so kind and tell us what was your reason to leave?.`
   });
-}
+};
 
 module.exports = {
   sendWelcomeEmail,
   sendFarewellEmail
-}
+};
